@@ -92,12 +92,13 @@ class DashWindow(object):
             self._is_tranning_runner_running = True
             self.trainning_runner.start()
         
-        if self.train_phase_component.if_is_trainning():
+        # if self.train_phase_component.if_is_trainning():
+        if self._is_tranning_runner_running:
             # self.trainning_runner.run_once()
             line_data = self.trainning_runner.get_net_value()
             self.lines_componnet.set_line_data(line_data)
 
-        if self.trainning_runner is not None:
+        # if self.trainning_runner is not None:
             self.train_phase_component.set_trainning_progress(
                 self.trainning_runner.get_trainning_progress())
             

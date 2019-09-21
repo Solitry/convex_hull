@@ -97,6 +97,7 @@ class DashWindow(object):
             line_data = self.trainning_runner.get_net_value()
             self.lines_componnet.set_line_data(line_data)
 
+        if self.trainning_runner is not None:
             self.train_phase_component.set_trainning_progress(
                 self.trainning_runner.get_trainning_progress())
             

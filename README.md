@@ -12,7 +12,15 @@
 
 UI 界面 使用 bimpy 实现。
 由于官方版本不支持最新的 ImGui，请使用 [Solitry/bimpy](https://github.com/Solitry/bimpy)
-并根据说明进行编译安装。
+并根据说明 **使用源码** 进行编译安装：
+```bash
+python(3) setup.py install
+```
+
+Clone bimpy 时需要同时 clone submodule:
+```bash
+git clone --recursive https://github.com/Solitry/bimpy.git
+```
 
 如果已经安装了 bimpy 0.0.13 版本，请使用 `pip(3) uninstall bimpy` 卸载。
 
